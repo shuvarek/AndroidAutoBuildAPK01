@@ -1,4 +1,4 @@
-name: Build project after push
+name: Test workflow
 
 on:
   workflow_dispatch:
@@ -7,5 +7,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from GitHub Actions!"
+      - run: echo "Hello from workflow_dispatch"
 
